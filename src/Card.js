@@ -36,7 +36,7 @@ export default function Card(props) {
     }
 
     function handleClick() {
-        alert("Кнопка нажата!");
+        alert("Date picker!");
     }
 
   const elements = [
