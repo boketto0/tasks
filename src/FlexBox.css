@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    flex-flow: column wrap;
+}
+
+.block {
+    height: 40px;
+    width: 800px;
+    background-color: aqua;
+    margin-top: 20px
+}
