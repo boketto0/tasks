@@ -3,7 +3,7 @@ import {useState} from "react";
 
 export default function Task2() {
 
-    const [setFocus] = useState(false);
+    const [ ,setFocus] = useState(false);
     const [inputColor, setInputColor] = useState(false);
     const [inputValue, setInputValue] = useState("");
 
