@@ -5,6 +5,7 @@ import Task2 from './Task2';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Card from './Card';
 import FlexBox from './FlexBox';
+import ParentBlock from './ParentBlock';
 
   function App() {
   
@@ -27,6 +28,9 @@ import FlexBox from './FlexBox';
             <li>
               <a href="/flexBox">FlexBox</a>
             </li>
+            <li>
+              <a href="/cardTest">Testing cards</a>
+            </li>
           </ul>
             <Switch>
               <Route exact path="/task1" component={Task1}/>
@@ -34,6 +38,7 @@ import FlexBox from './FlexBox';
               <Route exact path="/" component={Home}/>
               <Route exact path="/cards" component={Card}/>
               <Route exact path="/flexBox" component={FlexBox}/>
+              <Route exact path="/cardTest" component={ParentBlock}/>
             </Switch>
         </Router>
       </div>
