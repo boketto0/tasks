@@ -1,12 +1,13 @@
 import './Task1.css'
 import {useState} from "react";
+import { Button } from './Button';
 
 export default function Task1() {
     const [time, setTime] = useState(0);
     const [records, setRecords] = useState([]);
   
     let timerId;
-  
+
     function handleMouseDown() {
       console.log("MouseDown");
       timerId = setInterval(() => {
@@ -23,9 +24,9 @@ export default function Task1() {
   
     return (
       <div className="block1">
-        <div className="btn1" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+        <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
           {!time ? "Кнопка" : `Загрузка ${time} сек`}
-        </div>
+        </Button>
         <table className='table'>
           <thead>
             <tr>
@@ -43,3 +44,4 @@ export default function Task1() {
       </div>
     );
   } 
+

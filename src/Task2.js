@@ -3,7 +3,7 @@ import {useState} from "react";
 
 export default function Task2() {
 
-    const [isFocus, setFocus] = useState(false);
+    const [ ,setFocus] = useState(false);
     const [inputColor, setInputColor] = useState(false);
     const [inputValue, setInputValue] = useState("");
 
@@ -33,7 +33,7 @@ export default function Task2() {
     return(
         <div className="block2">
             <div className='btn2' id='btn'>
-                <input className={`input ${inputColor ? "input-border__color" : ""}`} type={"text"} name="key" placeholder="Заполните поле" 
+                <input className={`input ${inputColor ? "input-border__color" : ""}`} type={"text"} name="key" placeholder="Заполнить поле" 
                 onFocus={handleIsFocused}
                 onBlur={handleIsBlur}
                 onChange={handleInputChange}

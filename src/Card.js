@@ -36,32 +36,32 @@ export default function Card(props) {
     }
 
     function handleClick() {
-        alert("Кнопка нажата!");
+        alert("Date picker!");
     }
 
   const elements = [
     {
-      title: 'Button',
+      title: '1',
       button: <Button type={type} text={count.toString()} Type={ButtonType.PRIMARY}/>,
       onClick: handleIncrementCount,
     },
     {
-      title: 'Alerts',
+      title: '2',
       button: <Button type={type} text={toggle? "ON" : "OFF"} Type={ButtonType.PRIMARY}/>,
       onClick: handleState
     },
     {
-      title: 'Button group',
+      title: '3',
       button: <Button type={type} text={person.name} Type={ButtonType.PRIMARY}/>,
       onClick: handleChangeName
     },
     {
-      title: 'Modal',
+      title: '4',
       button: <Button type={type} text={list} Type={ButtonType.PRIMARY}/>,
       onClick: handleAddItem
     },
     {
-      title: 'Date picker',
+      title: '5',
       button: <Button type={type} text={'Date picker'} Type={ButtonType.PRIMARY}/>,
       onClick : handleClick
     }
